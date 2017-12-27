@@ -7,20 +7,20 @@ public class Programming05 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
-		System.out.println("³âµµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ë…„ë„ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		int a = in.nextInt();
 
 		/*
 		 * if (a%4 == 0) { if (a%100 == 0) { if (a%400 == 0) {
-		 * System.out.printf("%d³âµµ´Â À±³âÀÔ´Ï´Ù.", a); } else {
-		 * System.out.printf("%d³âµµ´Â Æò³âÀÔ´Ï´Ù.", a); } } }
+		 * System.out.printf("%dë…„ë„ëŠ” ìœ¤ë…„ì…ë‹ˆë‹¤.", a); } else {
+		 * System.out.printf("%dë…„ë„ëŠ” í‰ë…„ì…ë‹ˆë‹¤.", a); } } }
 		 */
 
 		if (a % 4 == 0 && a % 100 != 0 || a % 400 == 0) {
-			System.out.printf("%d³âµµ´Â À±³âÀÔ´Ï´Ù.", a);
+			System.out.printf("%dë…„ë„ëŠ” ìœ¤ë…„ì…ë‹ˆë‹¤.", a);
 		} 
 		else {
-			System.out.printf("%d³âµµ´Â Æò³âÀÔ´Ï´Ù.", a);
+			System.out.printf("%dë…„ë„ëŠ” í‰ë…„ì…ë‹ˆë‹¤.", a);
 		}
 
 	}

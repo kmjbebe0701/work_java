@@ -6,9 +6,9 @@ public class Weatherif {
 		int degree = 30;
 		
 		if (30 <= degree)
-			System.out.println("³¯¾¾°¡ ´þ½À´Ï´Ù.");		//{}°¡ ¾øÀ¸¸é ´ÙÀ½ÁÙ¸¸ ÀÌÀü ÇÔ¼ö¿¡ µé¾î°¨.
+			System.out.println("ë‚ ì”¨ê°€ ë¥ìŠµë‹ˆë‹¤.");		//{}ê°€ ì—†ìœ¼ë©´ ë‹¤ìŒì¤„ë§Œ ì´ì „ í•¨ìˆ˜ì— ë“¤ì–´ê°.
 		
-		System.out.println("³¯¾¾ ¿¹º¸¿´½À´Ï´Ù.");
+		System.out.println("ë‚ ì”¨ ì˜ˆë³´ì˜€ìŠµë‹ˆë‹¤.");
 		
 	}
 

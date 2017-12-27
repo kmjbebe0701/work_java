@@ -7,12 +7,12 @@ public class Programming03 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		
-		System.out.println("ÆÄ¿îµå·Î º¯È¯ÇÒ ¹«°Ô(kg)À» ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("íŒŒìš´ë“œë¡œ ë³€í™˜í•  ë¬´ê²Œ(kg)ì„ ì…ë ¥í•˜ì„¸ìš”.");
 		
 		double a = in.nextDouble();
 		double b = a * 2.2;
 		
-		System.out.printf("%.3f kgÀ» ÆÄ¿îµå º¯È¯ : %.3f lb", a, b);
+		System.out.printf("%.3f kgì„ íŒŒìš´ë“œ ë³€í™˜ : %.3f lb", a, b);
 
 	}
 

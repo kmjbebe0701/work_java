@@ -6,10 +6,10 @@ public class HelloOutput {
 
 	public static void main(String[] args) {
 		
-		//Ctrl + Shift + o : ÀÚµ¿À¸·Î importÃß°¡
+		//Ctrl + Shift + o : ìë™ìœ¼ë¡œ importì¶”ê°€
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("½ÊÁø¼ö¿Í ÀÌÁø¼ö¸¦ °¢°¢ ÀÔ·ÂÇÏ¼¼¿ä");		
+		System.out.println("ì‹­ì§„ìˆ˜ì™€ ì´ì§„ìˆ˜ë¥¼ ê°ê° ì…ë ¥í•˜ì„¸ìš”");		
 		int num1 = input.nextInt();
 		int num2 = input.nextInt(2);
 		System.out.println("num1 = " + num1 + ", num2 = " + num2);

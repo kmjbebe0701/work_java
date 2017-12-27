@@ -6,7 +6,7 @@ public class RelationalOP {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.println("µÎ Á¤¼ö¸¦ ÀÔ·Â");
+		System.out.println("ë‘ ì •ìˆ˜ë¥¼ ì…ë ¥");
 		
 		int x = input.nextInt();
 		int y = input.nextInt();

@@ -7,19 +7,19 @@ public class Programming02 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
-		System.out.println("ÇÕ°ú Æò±ÕÀ» ±¸ÇÒ µÎ ½Ç¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+		System.out.println("í•©ê³¼ í‰ê· ì„ êµ¬í•  ë‘ ì‹¤ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 		
-		//¸í½ÃÀû Çüº¯È¯
+		//ëª…ì‹œì  í˜•ë³€í™˜
 		int a = (int)in.nextDouble();
 		int b = (int)in.nextDouble();
 		
-		//¹¬½ÃÀû Çüº¯È¯
+		//ë¬µì‹œì  í˜•ë³€í™˜
 		double a1 = a + b;
 		double b1 = a1 / 2;
 				
 
-		System.out.printf("%.2f ¿Í %.2f ÀÇ ÇÕ : %.2f\n", a, b, a1);
-		System.out.printf("%.2f ¿Í %.2f ÀÇ Æò±Õ : %.2f\n", a, b, b1);
+		System.out.printf("%.2f ì™€ %.2f ì˜ í•© : %.2f\n", a, b, a1);
+		System.out.printf("%.2f ì™€ %.2f ì˜ í‰ê·  : %.2f\n", a, b, b1);
 
 	}
 

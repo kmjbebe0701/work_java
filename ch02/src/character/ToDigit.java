@@ -7,11 +7,11 @@ public class ToDigit {
 	public static void main(String[] args) {
 		Scanner input = new Scanner (System.in);
 		
-		System.out.println("º¯È¯ÇÒ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ë³€í™˜í•  ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”.");
 		
 		int num = input.nextInt();
 		
-		System.out.printf("8Áø¼ö : %1$o, 10Áø¼ö : %1$d, 16Áø¼ö : %1$h", num);
+		System.out.printf("8ì§„ìˆ˜ : %1$o, 10ì§„ìˆ˜ : %1$d, 16ì§„ìˆ˜ : %1$h", num);
 	}
 
 }

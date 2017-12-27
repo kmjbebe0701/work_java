@@ -7,7 +7,7 @@ public class Programming04 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
-		System.out.println("È­¾¾(F, f)³ª ¼·¾¾(C, c)¿Í º¯È¯ ÇÒ ¿Âµµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("í™”ì”¨(F, f)ë‚˜ ì„­ì”¨(C, c)ì™€ ë³€í™˜ í•  ì˜¨ë„ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		String a = in.next();
 		double b = in.nextDouble();
 		double c = (double)(5.0 / 9.0)*(b - 32);
@@ -17,7 +17,7 @@ public class Programming04 {
 		switch (a) {
 			case "F" :
 			case "f" :
-				System.out.printf("%.3s ¸¦ ¼·¾¾·Î º¯È¯ÇÏ¸é : %.3f", a, c);
+				System.out.printf("%.3s ë¥¼ ì„­ì”¨ë¡œ ë³€í™˜í•˜ë©´ : %.3f", a, c);
 				
 				break;
 				
@@ -25,12 +25,12 @@ public class Programming04 {
 			case "C" :
 			case "c" :
 				
-				System.out.printf("%.3s ¸¦ È­¾¾·Î º¯È¯ÇÏ¸é : %.3f", a, f);
+				System.out.printf("%.3s ë¥¼ í™”ì”¨ë¡œ ë³€í™˜í•˜ë©´ : %.3f", a, f);
 				
 				break;
 				
 			default:
-				System.out.println("¹®ÀÚ¸¦ Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
+				System.out.println("ë¬¸ìë¥¼ ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.");
 		
 		}
 

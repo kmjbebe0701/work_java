@@ -17,13 +17,13 @@ public class DevideByZero {
 		
 		String money = "10000";
 		double moneyDouble = Double.parseDouble(money);
-		if (!Double.isNaN(moneyDouble)) {	//money°ª¿¡ NaNÀÌ ÀÔ·ÂµÉ¶§ ¾ÈÀüÇÏ°Ô Ãß°¡ °ªÀ» º¸Á¸ ÇÒ¼ö ÀÖ´Â ÀåÄ¡
+		if (!Double.isNaN(moneyDouble)) {	//moneyê°’ì— NaNì´ ì…ë ¥ë ë•Œ ì•ˆì „í•˜ê²Œ ì¶”ê°€ ê°’ì„ ë³´ì¡´ í• ìˆ˜ ìˆëŠ” ì¥ì¹˜
 			double balance = 30000;
 			balance = balance + moneyDouble;
 			System.out.println(balance);
 		}
 		else {
-			System.out.println("±İ¾×À» ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+			System.out.println("ê¸ˆì•¡ì„ ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 		}
 		}
 

@@ -7,7 +7,7 @@ public class ToPound {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("¹«°Ô¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë¬´ê²Œë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 		
 		double num1 = input.nextDouble();
 		

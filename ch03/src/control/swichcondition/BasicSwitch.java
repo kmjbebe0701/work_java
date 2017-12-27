@@ -8,9 +8,9 @@ public class BasicSwitch {
 		double x, y;
 		int op;
 		Scanner input = new Scanner(System.in);
-		System.out.println("µÎ ½Ç¼ö ÀÔ·Â : ");
+		System.out.println("ë‘ ì‹¤ìˆ˜ ì…ë ¥ : ");
 		x = input.nextDouble(); y = input.nextDouble();
-		System.out.println("¹øÈ£ ¼±ÅÃ 1(+), 2(-), 3(*), 4(/) : ");
+		System.out.println("ë²ˆí˜¸ ì„ íƒ 1(+), 2(-), 3(*), 4(/) : ");
 		op = input.nextInt();
 		switch (op) {
 			case 1 :
@@ -27,7 +27,7 @@ public class BasicSwitch {
 				break;
 				
 				default : 
-					System.err.printf("¿¬»êÀÚ ¹øÈ£¸¦ Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.");
+					System.err.printf("ì—°ì‚°ì ë²ˆí˜¸ë¥¼ ì˜ëª» ì…ë ¥í–ˆìŠµë‹ˆë‹¤.");
 				
 			
 		}

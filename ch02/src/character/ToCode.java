@@ -3,7 +3,7 @@ package character;
 public class ToCode {
 
 	public static void main(String[] args) {
-		char a = 'ÀÚ';
+		char a = 'ì';
 		System.out.println(a);
 		
 		char b = '\uc790';

@@ -7,11 +7,11 @@ public class Programming09 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
-		System.out.println("Å°¿Í ¸ö¹«°Ô¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("í‚¤ì™€ ëª¸ë¬´ê²Œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.");
 		double a = in.nextDouble();
 		double b = in.nextDouble();
 		
-		String str = (b <= (a-100)*0.9) ? "Á¤»óÀÔ´Ï´Ù." : "ºñ¸¸ÀÔ´Ï´Ù";
+		String str = (b <= (a-100)*0.9) ? "ì •ìƒìž…ë‹ˆë‹¤." : "ë¹„ë§Œìž…ë‹ˆë‹¤";
 		System.out.println(str);
 
 	}

@@ -7,12 +7,12 @@ public class PersonInFo {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Å°¿Í ¸ö¹«°Ô¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("í‚¤ì™€ ëª¸ë¬´ê²Œë¥¼ ìž…ë ¥í•˜ì„¸ìš”.");
 		
 		double num1 = input.nextDouble();
 		int num2 = input.nextInt();
 		
-		System.out.printf("Å° : %.1f cm, ¸ö¹«°Ô : %d kg", num1, num2);
+		System.out.printf("í‚¤ : %.1f cm, ëª¸ë¬´ê²Œ : %d kg", num1, num2);
 		
 		input.close();
 		

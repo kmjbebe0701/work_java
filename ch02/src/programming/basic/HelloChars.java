@@ -4,12 +4,12 @@ public class HelloChars {
 
 	public static void main(String[] args) {
 		
-		System.out.println('a');			//ÀÏ¹İ¹®ÀÚ char Çü
-		System.out.println('\\');			//Æ¯¼ö¹®ÀÚ \ Ãâ·Â
-		System.out.println('\142');			//ÄÚµå°ª 8Áø¼ö Ç¥Çö 142ÀÇ ASCIIÄÚµå°ª (10Áø¼ö 98°ª)
-		System.out.println('\uAC00');		//ÄÚµå°ª 16Áø¼ö Ç¥Çö UTF-8(Unicode)°ª
-		System.out.println('\uAC01');		//ÄÚµå°ª 16Áø¼ö Ç¥Çö UTF-8(Unicode)°ª
-		System.out.println('°­');			//ÀÏ¹İ¹®ÀÚ
+		System.out.println('a');			//ì¼ë°˜ë¬¸ì char í˜•
+		System.out.println('\\');			//íŠ¹ìˆ˜ë¬¸ì \ ì¶œë ¥
+		System.out.println('\142');			//ì½”ë“œê°’ 8ì§„ìˆ˜ í‘œí˜„ 142ì˜ ASCIIì½”ë“œê°’ (10ì§„ìˆ˜ 98ê°’)
+		System.out.println('\uAC00');		//ì½”ë“œê°’ 16ì§„ìˆ˜ í‘œí˜„ UTF-8(Unicode)ê°’
+		System.out.println('\uAC01');		//ì½”ë“œê°’ 16ì§„ìˆ˜ í‘œí˜„ UTF-8(Unicode)ê°’
+		System.out.println('ê°•');			//ì¼ë°˜ë¬¸ì
 		
 		System.out.println("Hello\nWorld\tHi\bA\rB");
 		System.out.println("\'");

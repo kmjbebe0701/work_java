@@ -6,9 +6,9 @@ public class HelloOverloading {
 		
 		
 		/*
-		 * ¸Ş¼Òµå ¿À¹ö·Îµù È£ÃâÁ¶°Ç
-		 * 1. Argument(Parameter)ÀÇ Å¸ÀÔ ÀÏÄ¡
-		 * 2. Argument(Parameter)ÀÇ °³¼ö ÀÏÄ¡
+		 * ë©”ì†Œë“œ ì˜¤ë²„ë¡œë”© í˜¸ì¶œì¡°ê±´
+		 * 1. Argument(Parameter)ì˜ íƒ€ì… ì¼ì¹˜
+		 * 2. Argument(Parameter)ì˜ ê°œìˆ˜ ì¼ì¹˜
 		 * */
 		
 		int sum = plus(10, 20);

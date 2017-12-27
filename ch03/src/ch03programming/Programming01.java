@@ -7,13 +7,13 @@ public class Programming01 {
 	public static void main(String[] args) {
 	Scanner in = new Scanner(System.in);
 	
-	System.out.println("ÇÕ°ú Æò±ÕÀ» ±¸ÇÒ µÎ ½Ç¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+	System.out.println("í•©ê³¼ í‰ê· ì„ êµ¬í•  ë‘ ì‹¤ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 	
 	double a = in.nextDouble();
 	double b = in.nextDouble();
 	
-	System.out.printf("%.2f ¿Í %.2f ÀÇ ÇÕ : %.2f\n",a ,b ,a+b);
-	System.out.printf("%.2f ¿Í %.2f ÀÇ Æò±Õ : %.2f\n",a ,b ,(a+b)/2);
+	System.out.printf("%.2f ì™€ %.2f ì˜ í•© : %.2f\n",a ,b ,a+b);
+	System.out.printf("%.2f ì™€ %.2f ì˜ í‰ê·  : %.2f\n",a ,b ,(a+b)/2);
 	
 	in.close();
 		

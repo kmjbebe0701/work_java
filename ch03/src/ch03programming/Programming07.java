@@ -7,11 +7,11 @@ public class Programming07 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
-		System.out.println("´Ş(month)À» ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ë‹¬(month)ì„ ì…ë ¥í•˜ì„¸ìš”.");
 		int a = in.nextInt();
 		
-		String str = (a <= 6) ? "»ó¹İ±â ÀÔ´Ï´Ù." : "ÇÏ¹İ±â ÀÔ´Ï´Ù.";
-		System.out.printf("%d¿ù´ŞÀº %s", a, str);
+		String str = (a <= 6) ? "ìƒë°˜ê¸° ì…ë‹ˆë‹¤." : "í•˜ë°˜ê¸° ì…ë‹ˆë‹¤.";
+		System.out.printf("%dì›”ë‹¬ì€ %s", a, str);
 		
 		
 

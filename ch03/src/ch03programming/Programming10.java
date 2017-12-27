@@ -7,7 +7,7 @@ public class Programming10 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
-		System.out.println("ÁöºÒ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä.(ÃÖ¼Ò Ãµ¿ø´ÜÀ§)");
+		System.out.println("ì§€ë¶ˆ ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”.(ìµœì†Œ ì²œì›ë‹¨ìœ„)");
 		int a = in.nextInt();
 		int na = a;
 		
@@ -22,7 +22,7 @@ public class Programming10 {
 		
 		int t = (na/1000);
 		
-		System.out.printf("ÁöºÒ ±İ¾× : %d\n50000¿ø±Ç : %dÀå%n10000¿ø±Ç : %dÀå%n5000¿ø±Ç : %dÀå%n1000¿ø±Ç : %dÀå%n", a, fyt, tyt, ft, t);
+		System.out.printf("ì§€ë¶ˆ ê¸ˆì•¡ : %d\n50000ì›ê¶Œ : %dì¥%n10000ì›ê¶Œ : %dì¥%n5000ì›ê¶Œ : %dì¥%n1000ì›ê¶Œ : %dì¥%n", a, fyt, tyt, ft, t);
 		
 
 	}

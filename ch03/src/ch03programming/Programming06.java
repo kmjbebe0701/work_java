@@ -7,7 +7,7 @@ public class Programming06 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
-		System.out.println("Ãµ¸¸ ÀÌÇÏÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì²œë§Œ ì´í•˜ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		int intt = in.nextInt();
 		int na = intt;
 
@@ -24,24 +24,24 @@ public class Programming06 {
 		na %= 10;
 
 		if (a > 0 &&  intt <= 10000000) {
-			System.out.printf("ÀÔ·Â : %d¸¸%dÃµ%d¹é%d½Ê%d¿ø ÀÔ´Ï´Ù.%n", a, b, c, d, na);
+			System.out.printf("ì…ë ¥ : %dë§Œ%dì²œ%dë°±%dì‹­%dì› ì…ë‹ˆë‹¤.%n", a, b, c, d, na);
 		}
 		else if (b > 0 &&  intt <= 10000000) {
-			System.out.printf("ÀÔ·Â : %dÃµ%d¹é%d½Ê%d¿ø ÀÔ´Ï´Ù.%n", b, c, d, na);
+			System.out.printf("ì…ë ¥ : %dì²œ%dë°±%dì‹­%dì› ì…ë‹ˆë‹¤.%n", b, c, d, na);
 		}
 		else if (c > 0 &&  intt <= 10000000) {
-			System.out.printf("ÀÔ·Â : %d¹é%d½Ê%d¿ø ÀÔ´Ï´Ù.%n", c, d, na);
+			System.out.printf("ì…ë ¥ : %dë°±%dì‹­%dì› ì…ë‹ˆë‹¤.%n", c, d, na);
 		}
 		else if (d > 0 &&  intt <= 10000000) {
-			System.out.printf("ÀÔ·Â : %d½Ê%d¿ø ÀÔ´Ï´Ù.%n", d, na);
+			System.out.printf("ì…ë ¥ : %dì‹­%dì› ì…ë‹ˆë‹¤.%n", d, na);
 
 		}
 		else if (na >= 0 &&  intt <= 10000000) {
-			System.out.println("ÀÔ·Â : " + na + "¿ø ÀÔ´Ï´Ù");
+			System.out.println("ì…ë ¥ : " + na + "ì› ì…ë‹ˆë‹¤");
 		}
 
 		else {
-			System.out.println("ÀÔ·ÂÀÌ Àß¸øµÇ¾ú½À´Ï´Ù.");
+			System.out.println("ì…ë ¥ì´ ì˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 
 	}

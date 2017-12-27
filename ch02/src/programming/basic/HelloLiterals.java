@@ -8,11 +8,11 @@ public class HelloLiterals {
 
 
 	public static void main(String[] args) {
-		System.out.println(0b1010);			//ÀÌÁø¼ö
-		System.out.println(016);			//8Áø¼ö
-		System.out.println(0x1F);			//16Áø¼ö
-		System.out.println(3.14f);			//float Çü
-		System.out.println(3.1415D);		//double Çü
+		System.out.println(0b1010);			//ì´ì§„ìˆ˜
+		System.out.println(016);			//8ì§„ìˆ˜
+		System.out.println(0x1F);			//16ì§„ìˆ˜
+		System.out.println(3.14f);			//float í˜•
+		System.out.println(3.1415D);		//double í˜•
 		System.out.println(creditCardNumber);
 		System.out.println(socialSecurityNumber);
 		System.out.println(pi);
