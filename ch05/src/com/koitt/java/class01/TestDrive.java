@@ -73,8 +73,9 @@ public class TestDrive {
 		System.out.println(taehyun.getName());
 		System.out.println(taehyun.getAge());
 		
-		
-		
+		//(default)접근제한자로 변경시 발생하는 문제
+		sanghoon.ssn = "801201";
+		System.out.println("주민등록번호 날조 : " + sanghoon.ssn);
 		
 
 	}
