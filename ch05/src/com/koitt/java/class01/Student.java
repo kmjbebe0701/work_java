@@ -22,7 +22,7 @@ public class Student extends Person {
 	public void setStudentID(int studentID) {
 		this.studentID = studentID;
 	}	
-	public void setMajor(String subject) {
+	public void setMajor(String major) {
 		this.major = major;
 	}
 	public void setGrade(int grade) {
