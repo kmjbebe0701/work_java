@@ -41,6 +41,15 @@ public class Car {
 		return speed;
 
 	}
+	
+
+	public String getBrandName() {
+		return brandName;
+	}
+
+	public void setBrandName(String brandName) {
+		this.brandName = brandName;
+	}
 
 	public int getMaxSpeed() {
 		return maxSpeed;
@@ -54,8 +63,8 @@ public class Car {
 		Car myCar = new Car("포르쉐", 300);
 		myCar.speedUp();
 		myCar.speedUp();
-		System.out
-				.println("차종: " + myCar.brandName + ", 최고속도: " + myCar.getMaxSpeed() + ", 현재속도: " + myCar.speedDown());
+		System.out.println("차종: " + myCar.brandName + ", 최고속도: " + myCar.getMaxSpeed() + ", 현재속도: " + myCar.speedDown());
+		
 	}
 
 }

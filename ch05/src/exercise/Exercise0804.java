@@ -17,5 +17,5 @@ public class Exercise0804 {
 		this.uNumber = uNumber;
 	}
 	
-
+ 
 }
