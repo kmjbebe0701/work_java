@@ -22,8 +22,19 @@ public class Car {
 		return speed -= 20;
 	}
 
+	public int getMaxSpeed() {
+		return maxSpeed;
+	}
+	public void setMaxSpeed(int maxSpeed) {
+		this.maxSpeed = maxSpeed;
+	}
+	
 	public static void main(String[] args) {
-		
+		Car myCar = new Car("포르쉐", 300);
+		myCar.speedUp();
+		myCar.speedUp();
+		System.out.println("차종: " + myCar.brandName + ", 최고속도: " + myCar.getMaxSpeed()
+							+ ", 현재속도: " + myCar.speedDown());
 	}
 
 }
