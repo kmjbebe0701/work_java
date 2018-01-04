@@ -7,7 +7,7 @@ public class UpCasting {
 		System.out.println(she.name + " " + she.number);
 		
 		Faculty f = new Faculty("김영태", 1145782, "연한대학교", 38764);
-		Person p = f;				//업캐스팅
+		Person p = f;				//업캐스팅(부모는 자식객체를 저장할수있다.)
 		
 		System.out.print(p.name + " " + p.number + " ");
 		//System.out.print(p.univ);		//참조 불가능
