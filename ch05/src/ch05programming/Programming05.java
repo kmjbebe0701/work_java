@@ -11,7 +11,7 @@ public class Programming05 {
 	}
 	
 	public int getAnnualGross() {
-		return salary * 5;
+		return salary * 12 + salary *5;
 	}
 
 

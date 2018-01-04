@@ -44,23 +44,20 @@ public class Programming08 {
 	}
 
 	public long withdraw(long amount) {
-		long a = this.balance -= amount;
+/*		long a = this.balance -= amount;
 		if (a < 0) {
 			System.err.println("잔액이 부족하여 인출이 불가합니다.\n");
 			return this.balance = 0;
 		} 
 		else {
 			return this.balance -= amount;
-		}
-	}
-
-	public static void main(String[] args) {
-		Programming08 p = new Programming08();
-		p.deposit(100000);
-		p.deposit(50000);
-		p.deposit(5000);
-		p.withdraw(1400000);
-		System.out.println("잔액: " + p.balance);
+		}*/
+		if (this.balance<amount) {
+			System.err.println("잔액이 부족하여 인출이 불가합니다.\n");
+			return this.balance = 0;
+		} 
+			return this.balance -= amount;
+		
 	}
 
 }

@@ -3,20 +3,21 @@ package ch05programming;
 public class Programming04Cylinder {
 	
 	public double height;
-	Programming03Circle c = new Programming03Circle(2.8);
+	//Programming03Circle c = new Programming03Circle(2.8);
+	Programming03Circle circle;
 	
 	public Programming04Cylinder(double height) {
 		this.height = height;
 	}
 	
-	public Programming04Cylinder(Programming03Circle c, double height) {
+	public Programming04Cylinder(Programming03Circle circle, double height) {
 		this.height = height;
-		this.c = c;
+		this.circle = circle;
 	}
 
 
 	public double getVolume() {
-		return height * c.getArea();
+		return height * circle.getArea();
 	}
 	
 
