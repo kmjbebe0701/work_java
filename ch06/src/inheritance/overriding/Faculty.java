@@ -1,4 +1,4 @@
-package inheritance.typrcast;
+package inheritance.overriding;
 
 public class Faculty extends Person {
 	public String univ;
@@ -11,11 +11,17 @@ public class Faculty extends Person {
 	}
 
 	public long getSNumber() {
-		return number;
+		return super.number;
 	}
 
 	public void setSNumber(long number) {
 		this.number = number;
+	}
+	
+	@Override
+	public void printInfo() {
+		System.out.print("이름: " + super.name + ", 주민번호: " + super.number);
+		System.out.println(", 대학: " + univ + ", 직원번호: " + number);
 	}
 	
 	
