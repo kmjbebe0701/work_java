@@ -8,10 +8,13 @@ public class KoittBoard {
 		db.insert();
 		db.remove();
 		*/
-		KoittDB db = new MySDB();
+		/*KoittDB db = new MySDB();
 		db.insert();
 		db.remove();
-				
+		*/	
+		KoittDB db = DBFactory.getDB("MyS");		//DI(의존성 주입)
+		db.insert();
+		db.remove();
 	}
 
 }
