@@ -35,6 +35,7 @@ public class Employee {
 		System.out.println("이름: "+ name + ", 나이: " + age + ", 주소" + address + ", 부서" + division);
 	}
 	
+	public void setTime(int time) {}
 	
 
 }

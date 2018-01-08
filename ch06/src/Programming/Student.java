@@ -5,13 +5,14 @@ public class Student extends Person {
 	String major;
 	int studentID;
 	double []aver;
-	double sum;	
+
 	
 	public Student(String name, int age, String address, String school, String major, int studentID) {
 		super(name, age, address);
 		this.school = school;
 		this.major = major;
 		this.studentID = studentID;
+		this.aver = new double [8];
 	}
 	public double[] getAver() {
         return aver;
@@ -24,7 +25,7 @@ public class Student extends Person {
 
 
 	public void average() {
-
+		double sum = 0;	
 		for (int i =0; i<aver.length; i++) {
 			sum += aver[i];			
 		}

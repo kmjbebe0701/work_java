@@ -2,7 +2,7 @@ package Programming;
 
 public class Car {
 	int maxSpeed;
-	int speed = 0;
+	int speed;
 
 	public Car(int maxSpeed) {
 		super();
@@ -10,9 +10,9 @@ public class Car {
 	}
 
 	public int speedUp() {
-		if (speed > maxSpeed) {
-			System.out.printf("speedDown() 호출: 최대속도보다 높아 최대 속도로 지정, 최대속도: %d, 현재속도: %d\n",maxSpeed,speed);
-			return this.speed;
+		if (speed+5 > maxSpeed) {
+			System.out.printf("speedUp() 호출: 최대속도보다 높아 최대 속도로 지정, 최대속도: %d, 현재속도: %d\n",maxSpeed,maxSpeed);
+			return this.speed = maxSpeed;
 		}
 		else {
 			this.speed += 5;

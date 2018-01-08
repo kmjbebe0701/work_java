@@ -5,6 +5,7 @@ public class Regular extends Employee {
 	public Regular(String name, int age, String address, String division) {
 		super(name, age, address, division);
 	}	
+	
 
 		public void printInfo() {
 			
