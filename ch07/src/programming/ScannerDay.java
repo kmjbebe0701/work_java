@@ -9,9 +9,15 @@ public class ScannerDay {
 		Scanner in = new Scanner(System.in);
 		Calendar cal = Calendar.getInstance();
 		
-		System.out.println("년, 월 , 일을 입력하세요 (yyyy mm dd)");
-		cal = in.nextInt();
 		
+		System.out.println("년, 월 , 일을 입력하세요 (yyyy mm dd)");
+		int yy = in.nextInt();
+		int mm = in.nextInt();
+		int dd = in.nextInt();
+		
+		
+		cal.set(yy, mm, dd);
+		System.out.println(cal.getTime());
 		
 		
 		 switch (cal.get(Calendar.DAY_OF_WEEK)){
