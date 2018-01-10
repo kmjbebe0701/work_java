@@ -7,6 +7,14 @@ public class Person {
 		super();
 		this.name = name;
 	}
+	
+	@Override
+	public boolean equals (Object name) {
+		if (this.name == name) {
+		return true;
+		}
+		return false;
+	}
 
 
 

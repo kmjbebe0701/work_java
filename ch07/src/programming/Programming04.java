@@ -3,7 +3,7 @@ package programming;
 import java.util.Calendar;
 import java.util.Scanner;
 
-public class ScannerDay {
+public class Programming04 {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
@@ -16,7 +16,7 @@ public class ScannerDay {
 		int dd = in.nextInt();
 		
 		
-		cal.set(yy, mm, dd);
+		cal.set(yy, mm-1, dd);
 		System.out.println(cal.getTime());
 		
 		
