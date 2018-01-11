@@ -18,10 +18,10 @@ public class WrapperClass {
 		Short sh = 100;
 		Integer in = 20;
 		Long lo = 100_000_000_000L;
-		Float fl = new Float(1.2);
+		Float fl = 1.2F;
 		Double dou = 3.45;
 		Character ch = 'c';
-		Boolean bool = new Boolean("true");
+		Boolean bool = true;
 		
 		System.out.printf("%d %d %d %d %.2f %.2f %c %b",by, sh, in, lo, fl, dou, ch, bool);
 		

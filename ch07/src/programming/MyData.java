@@ -1,51 +1,42 @@
 package programming;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 public class MyData<K, V1, V2> {
-	private Set<K> keySet;					//key 값들을 저장하는 Set
-	private List<K> keys;					
-	private List<V1> values1;				
-	private List<V2> values2;
-	private int size;						//데이터의 개수
+	// Map 2개 만들기
+	Map<K, V1> telecom;		// 키: 이름, 값: 통신사
+	Map<K, V2> phoneBook;	// 키: 이름, 값: 전화번호
 	
 	public MyData() {
-		keySet = new HashSet<K>();
-		keys = new ArrayList<K>();
-		values1 = new ArrayList<V1>();
-		values2 = new ArrayList<V2>();
+		this.telecom = new HashMap<K, V1>();
+		this.phoneBook = new HashMap<K, V2>();
 	}
 	
-	public void put(K key, V1 value, V2 value) {
-		for (int i =0; i<keys.size(); i++) {
-			//이 조건이 맞으면 해당 key의 value를 수정
-			if (keys.get(i).equals(key)) {
-				values1.set(i, value);
-				return;
-			}
-		}
-		keySet.add(key);
-		keys.add(key);
-		values1.add(value);
-		size +=1;
-	}
-	
-	public V get(K key) {
-		for (int i = 0; i < keys.size(); i++) {
-			if (keys.get(i).equals(key)) {
-				return values.get(i);
-			}
-		}
+	public void search(String name) {
+		V1 t = telecom.get(name);
+		V2 p = phoneBook.get(name);
 		
-		return null;
+		System.out.println("입력하신 " + name + "의 전화번호는 " + p + ", "
+				+ "이동통신사는 " + t + "입니다.");
 	}
 	
-	public Set<K> getKeySet() {
-		return this.keySet;
+	public void put(K name, V1 telecom, V2 phone) {
+		this.telecom.put(name, telecom);
+		this.phoneBook.put(name, phone);
 	}
 	
 
+	public static void main(String[] args) {
+		MyData<String, String, String> myData = new MyData<>();
+		myData.put("김이용", "KT", "010-3196-3985");
+		myData.put("홍길동", "SKT", "010-5000-7800");
+		
+		System.out.println("검색할 이름을 적으세요 >> ");
+		Scanner input = new Scanner(System.in);
+		String name = input.next();
+		
+		myData.search(name);
+		input.close();
+	}
 }
