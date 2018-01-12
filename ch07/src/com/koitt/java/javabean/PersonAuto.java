@@ -1,6 +1,9 @@
 package com.koitt.java.javabean;
 
-public class PersonAuto {
+import java.io.Serializable;
+
+//자바 빈(Java bean)
+public class PersonAuto extends Object implements Serializable{
 	
 	private String name;
 	private int age;
@@ -17,8 +20,27 @@ public class PersonAuto {
 		this.name = name;
 		this.age = age;
 	}
+	
+	//3. getter. setter(보통생성자 아래 생성)
+	
+	public String getName() {
+		return name;
+	}
 
-	//3. equals, hashCode 자동 완성 - Alt + Shift + S(Generate hashCode and equals...)
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+
+	//4. equals, hashCode 자동 완성 - Alt + Shift + S(Generate hashCode and equals...)
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -28,6 +50,7 @@ public class PersonAuto {
 		return result;
 	}
 
+	
 	
 	@Override
 	public boolean equals(Object obj) {
@@ -52,7 +75,7 @@ public class PersonAuto {
 		
 		//6.this 의 name이 null값일때, name값 (주소값) 비교
 		if (name == null) {
-			// 비교대상의 필드가null이면 다른 객체로 판단
+			// 비교대상의 필드가null이 아니면 다른 객체로 판단
 			if (other.name != null)
 				return false;
 			}
@@ -62,13 +85,29 @@ public class PersonAuto {
 		//8. 위 조건을 모두 만족하지 않으면 같은 객체로 판단
 		return true;
 	}
+	//5. toString 자동완성 - Alt + Shift + S(Generate toString()...)
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("PersonAuto [name=");
+		builder.append(name);
+		builder.append(", age=");
+		builder.append(age);
+		builder.append("]");
+		return builder.toString();
+	}
+
 	
 	
+	
+
 	public static void main(String[] args) {
 		PersonAuto p = new PersonAuto();
 		System.out.println(p.getClass());
+		PersonAuto p1 = new PersonAuto("홍길동" , 30);
+		System.out.println(p1);
+		
 	}
-	
 	
 	
 
