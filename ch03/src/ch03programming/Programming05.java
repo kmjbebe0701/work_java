@@ -17,7 +17,7 @@ public class Programming05 {
 		 */
 
 		if (a % 4 == 0 && a % 100 != 0 || a % 400 == 0) {
-			System.out.printf("%d년도는 윤년입니다.", a);
+			System.out.printf("%d년도는 윤년입니다.", a); 
 		} 
 		else {
 			System.out.printf("%d년도는 평년입니다.", a);
