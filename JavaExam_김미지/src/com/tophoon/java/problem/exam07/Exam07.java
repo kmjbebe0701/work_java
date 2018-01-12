@@ -69,7 +69,12 @@ public class Exam07 {
 
 	public static void printTime() {
 		Calendar cal = Calendar.getInstance();
-		System.out.print(cal.getTime() + " ");
+		int yy = cal.get(Calendar.YEAR);
+		int mm = cal.get(Calendar.MONTH);
+		int dd = cal.get(Calendar.DATE);
+		
+		System.out.print(yy + "년 " + (mm+1) + "월 " + dd + "일 " );
+		//System.out.print(cal.getTime() + " ");
 
 	}
 

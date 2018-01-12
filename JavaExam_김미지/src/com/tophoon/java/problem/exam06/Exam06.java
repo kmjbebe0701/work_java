@@ -68,6 +68,12 @@ public class Exam06 {
 		sh[0].draw();
 		sh[1].draw();
 		
+		/*
+		for(int i = 0; i<sh.length; i++) {
+			sh[i].draw();
+		}
+		*/
+		
 		Printer[] pr = {new Circle(3.0, 4.0, 4.82), new Rectangle(2.0, 3.0, 3.67, 7.89),
 				new Other(4)};
 		
@@ -75,6 +81,13 @@ public class Exam06 {
 		pr[1].printClassName();
 		pr[2].printClassName();
 		
+		/*
+		int i = 0;
+		while(i < pr.length) {
+			pr[i].printClassName();
+			i++;
+		}
+		*/
 
 	}
 
