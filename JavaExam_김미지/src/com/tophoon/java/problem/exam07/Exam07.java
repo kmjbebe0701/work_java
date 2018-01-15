@@ -47,8 +47,10 @@ public class Exam07 {
 				for (String key : hm.keySet()) {
 					String value = hm.get(key);
 					System.out.println(key + ": " + value);
-					break;
+					
 				}
+				break;
+				
 			}
 			printTime();
 			System.out.print("번호을 입력하세요(quit: 종료) > ");
@@ -58,8 +60,9 @@ public class Exam07 {
 				for (String key : hm.keySet()) {
 					String value = hm.get(key);
 					System.out.println(key + ": " + value);
-					break;
+					
 				}
+				break;
 			}
 			hm.put(name, num);
 
