@@ -30,5 +30,30 @@ public class PersonDao {
 	public List<Person> selectAll() {
 		return this.list;
 	}
+	
+	//Argument로 전달받은 객체를 list에서 제거
+	public void delete(Person p) throws MyException{
+		//list에서 Argument로 전달받은 객체의 name과 동일한 객체가 있는지 확인
+		for (Person item : this.list) {
+			if (item.equals(p)) {
+				list.remove(item);
+				return;
+			}
+		}
+		throw new MyException("E02: 삭제할 사람이 없습니다.");
+	}
+	
+	public void updata(Person p) throws MyException{
+		//list에서 Argument로 전달받은 객체의 name과 동일한 객체가 있는지 확인
+		for (Person item : this.list) {
+			if (item.equals(p)) {
+				//item.setName(p.getName());		
+				//동일 이름으로 검색했으므로 이름은 같을것, 업데이트 할 필요 없다
+				item.setAge(p.getAge());
+				return;
+			}
+		}
+		throw new MyException("E03: 수정 할 사람이 없습니다.");
+	}
 
 }
