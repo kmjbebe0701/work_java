@@ -3,17 +3,16 @@ package com.koitt.java.board;
 import java.util.List;
 import java.util.Scanner;
 
-
 public class BoardController {
-	
+
 	private BoardService service;
 	private Scanner in;
-	
+
 	public BoardController() {
 		service = new BoardService();
 		in = new Scanner(System.in);
 	}
-	
+
 	public static void main(String[] args) {
 		BoardController controller = new BoardController();
 		Scanner in = new Scanner(System.in);
@@ -30,8 +29,7 @@ public class BoardController {
 			int menu = -1;
 			try {
 				menu = Integer.parseInt(in.nextLine()); // 한 줄 단위로 입력받음(String 타입)
-			}
-			catch (NumberFormatException e) {
+			} catch (NumberFormatException e) {
 				System.out.println("메뉴는 숫자로만 입력하세요.");
 				continue;
 			}
@@ -59,12 +57,16 @@ public class BoardController {
 				// exit의 숫자는 운영체제가 사용
 				break;
 
+			default:
+				System.out.println("숫자를 다시 입력하세요.");
+				break;
+
 			}
 
 		}
 
 	}
-	
+
 	public void menuAdd() {
 		System.out.println("===게시물을 입력해주세요===");
 		System.out.print("글 제목: ");
@@ -73,15 +75,13 @@ public class BoardController {
 		String content = in.nextLine();
 		System.out.print("작성자: ");
 		String writer = in.nextLine();
-		
-		
-		Board b = new Board (title, content, writer);
-		
-		
+
+		Board b = new Board(title, content, writer);
+
 		service.add(b);
 		System.out.println("게시물 등록 완료!!!");
 	}
-	
+
 	public void menuRead() {
 		System.out.println("===인적사항 전체 목록 ===");
 
@@ -93,14 +93,14 @@ public class BoardController {
 			System.out.println(item);
 		}
 	}
-	
+
 	public void menuRemove() {
 		System.out.println("===삭제 할 게시물을 입력해주세요===");
 		System.out.print("글 번호: ");
 		Integer id = Integer.parseInt(in.nextLine());
-		Board b = new Board ();
+		Board b = new Board();
 		b.setId(id);
-		
+
 		try {
 			service.remove(b);
 			System.out.println(b.getId() + "번 게시물이 삭제 되었습니다.");
@@ -108,6 +108,7 @@ public class BoardController {
 			System.out.println(e.getMessage());
 		}
 	}
+
 	public void menuUpDate() {
 		System.out.println("===수정 할 게시물을 입력해주세요===");
 		System.out.print("글 번호: ");
@@ -118,10 +119,10 @@ public class BoardController {
 		String content = in.nextLine();
 		System.out.print("작성자: ");
 		String writer = in.nextLine();
-		
-		Board b = new Board (title, content, writer);
+
+		Board b = new Board(title, content, writer);
 		b.setId(id);
-		
+
 		try {
 			service.upDate(b);
 			System.out.println(b.getId() + "번 게시물이 수정 되었습니다.");
@@ -129,7 +130,5 @@ public class BoardController {
 			System.out.println(e.getMessage());
 		}
 	}
-	
-	
 
 }
