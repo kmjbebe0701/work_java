@@ -29,7 +29,14 @@ public class PersonController {
 			System.out.println("5. 프로그램 종료");
 			System.out.print("메뉴번호 입력> ");
 
-			Integer menu = Integer.parseInt(input.nextLine());
+			int menu = -1;
+			try {
+				menu = Integer.parseInt(input.nextLine()); // 한 줄 단위로 입력받음(String 타입)
+			}
+			catch (NumberFormatException e) {
+				System.out.println("메뉴는 숫자로만 입력하세요.");
+				continue;
+			}
 
 			switch (menu) {
 			case 1:
