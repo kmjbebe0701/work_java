@@ -35,7 +35,7 @@ public class BoardDao {
 				bo.setTitle(b.getTitle());
 				bo.setContent(b.getContent());
 				bo.setWriter(b.getWriter());
-				bo.setRegDate(b.getRegDate());
+				
 				return;
 			}
 		}
