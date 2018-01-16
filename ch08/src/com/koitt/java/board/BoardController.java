@@ -19,7 +19,7 @@ public class BoardController {
 		Scanner in = new Scanner(System.in);
 
 		while (true) {
-			System.out.println("===인적사항 관리 프로그램==");
+			System.out.println("===게시판 관리 프로그램==");
 			System.out.println("1. 게시물 입력");
 			System.out.println("2. 게시물 전체출력");
 			System.out.println("3. 게시물 삭제");
