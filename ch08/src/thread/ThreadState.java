@@ -6,11 +6,15 @@ public class ThreadState implements Runnable {
 	public void run() {
 		for (int i = 0; i < 10; i++) {
 			try {
-				Thread.sleep(40);
+				Thread.sleep(40);			//40밀리초 정지(휴식)
+				
+				//현재 스레드의 상태를 출력
 				System.out.print(Thread.currentThread().getState() + ", ");
+				
+				//현재 스레드의 이름을 출력
 				System.out.println(Thread.currentThread().getName() + ": " + i);
 			} catch (InterruptedException e) {
-				System.err.println("InterruptedException이 발생되어 스레드를 종료합니다.");
+				System.out.println("InterruptedException이 발생되어 스레드를 종료합니다.");
 				return;
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -21,6 +25,7 @@ public class ThreadState implements Runnable {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.out.println("스레드의 모든 상태: 6가지");
+		//Thread.State enum에 정의된 값들을 하나씩 출력
 		for (Thread.State c: Thread.State.values()) {
 			System.out.print(c + " ");
 		}
@@ -34,7 +39,9 @@ public class ThreadState implements Runnable {
 		System.out.println("1단계: " + th.getState());
 		th.start();
 		System.out.println("2단계: " + th.getState());
-		Thread.sleep(130);
+		Thread.sleep(130);				
+		//130밀리초 정지(휴식) 
+		//메인 스레드에 적용/시간 증가시킬수록 상단 th(for문)이 정상적으로 실행하기때문에 Exception 오류 메세지 발생X
 		th.interrupt();
 		System.out.println("3단계: " + th.getState());
 		Thread.sleep(1000);

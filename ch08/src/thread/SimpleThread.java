@@ -5,7 +5,8 @@ class MyThread extends Thread {
 	public void run() {
 		//기능구현
 		for (int i = 1; i<10; i++) {
-			System.out.println(getName() + ": " + i);
+			System.out.println(getName() + ": " + i
+					+"/실제스레드: " + Thread.currentThread().getName());
 		}
 	}
 }
@@ -15,6 +16,9 @@ public class SimpleThread {
 	public static void main(String[] args) {
 		MyThread th = new MyThread();			//스레드 생성
 		th.start();								//스레드 시작 메소드 호출
+		
+		MyThread th2 = new MyThread();			//스레드 생성
+		th2.start();							//스레드 시작 메소드 호출
 		
 
 	}
