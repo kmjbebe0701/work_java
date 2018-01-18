@@ -1,6 +1,6 @@
 package ch08.exam02;
 
-public class Ex03 {
+public class Ex02 {
 	
 	public static void main(String[] args) {
 		BankAccount ba = new BankAccount(-100000);
