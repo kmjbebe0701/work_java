@@ -15,7 +15,7 @@ public class PrimeNumber01 extends Thread {
 		this.max = max;
 	}
 
-	@Override
+/*	@Override
 	public void run() {
 		for (int i = 2, count = 0; i <= max; i++) {
 			
@@ -32,7 +32,23 @@ public class PrimeNumber01 extends Thread {
 			} catch (Exception e) {
 				System.out.println(e);
 			}
-
+		}*/
+	
+	@Override
+	public void run() {
+		for (Integer i = 2; i <= max; i++) {
+			
+			array.add(i);
+			try {
+				for (int b : array) {
+					if (i != b && i % b == 0) {
+						array.remove(i);
+						break;
+					}
+				}
+			} catch (Exception e) {
+				System.out.println(e);
+			}
 		}
 
 		for (int b : array) {
