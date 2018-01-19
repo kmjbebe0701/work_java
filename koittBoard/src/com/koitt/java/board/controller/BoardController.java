@@ -27,7 +27,7 @@ public class BoardController {
 			System.out.println("=== KOITT 게시판 ===");
 			System.out.println("1. 게시글 추가");
 			System.out.println("2. 게시글 전체목록 출력");
-			System.out.println("3. 게시글 삭제");
+			System.out.println("3. 게시글 삭제"); 
 			System.out.println("4. 게시글 수정");
 			System.out.println("5. 프로그램 종료");
 			System.out.print("메뉴번호 입력 > ");
