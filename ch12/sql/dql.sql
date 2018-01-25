@@ -115,3 +115,8 @@ SELECT d.dname, d.loc FROM emp e, dept d WHERE e.deptno = d.deptno AND e.ename =
 
 #사원의 이름과 그 매니저의 이름을 출력
 SELECT e.ename, m.ename FROM emp e, emp m WHERE e.mgr = m.empno;
+
+
+
+
+select * from city;
