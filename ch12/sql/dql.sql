@@ -119,4 +119,5 @@ SELECT e.ename, m.ename FROM emp e, emp m WHERE e.mgr = m.empno;
 
 
 
-select * from city;
+select * from department;
+drop table course;
