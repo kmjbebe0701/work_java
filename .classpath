@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="ch01/src"/>
+	<classpathentry kind="src" path="ch02/src"/>
+	<classpathentry kind="src" path="ch03/src"/>
+	<classpathentry kind="src" path="ch04/src"/>
+	<classpathentry kind="src" path="ch05/src"/>
+	<classpathentry kind="src" path="ch06/src"/>
+	<classpathentry kind="src" path="ch07/src"/>
+	<classpathentry kind="src" path="ch08/src"/>
+	<classpathentry kind="src" path="ch11/src"/>
+	<classpathentry kind="src" path="ch12/src"/>
+	<classpathentry kind="src" path="JavaExam_김미지/src"/>
+	<classpathentry kind="src" path="koittBoard/src"/>
+	<classpathentry kind="src" path="programming/src"/>
+	<classpathentry kind="lib" path="ch12/lib/mysql-connector-java-5.1.45-bin.jar"/>
+	<classpathentry kind="lib" path="koittBoard/lib/mysql-connector-java-5.1.45-bin.jar"/>
+	<classpathentry kind="output" path="JavaExam_김미지/bin"/>
+</classpath>
